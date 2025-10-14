@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Variables de entorno
+.env
+
+# Sesión de WhatsApp Web
+.wwebjs_auth/
+
+# Sesión de WhatsApp Web cache
+.wwebjs_cache/
+
+# Logs
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
