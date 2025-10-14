@@ -27,11 +27,7 @@ app.use((req, res, next) => {
 // Así nunca tendrás que escanear el QR de nuevo
 const client = new Client({
   authStrategy: new LocalAuth(),
-  puppeteer: { //Esto lo utilizo para un VPS, si no lo utilizas puedes eliminar esta sección
-    headless: true,
-    executablePath: '/usr/bin/chromium',  
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
-  }
+  
 });
 
 // Generar QR si no hay sesión
