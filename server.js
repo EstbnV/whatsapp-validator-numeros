@@ -27,6 +27,10 @@ app.use((req, res, next) => {
 // Así nunca tendrás que escanear el QR de nuevo
 const client = new Client({
   authStrategy: new LocalAuth(),
+  puppeteer: {
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-accelerated-2d-canvas', '--no-first-run', '--no-zygote', '--disable-gpu']
+  }
   
 });
 
